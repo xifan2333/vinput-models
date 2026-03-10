@@ -1,0 +1,188 @@
+[
+  {
+    "name": "sense-voice-zh-en-int8",
+    "display_name": "SenseVoice 中英日韩粤 (int8)",
+    "description": "阿里 FunASR SenseVoice 多语言模型，支持中英日韩粤五种语言，int8 量化，推荐首选",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 165675008,
+    "model_type": "sense_voice",
+    "language": "zh",
+    "vinput_model": {
+      "model_type": "sense_voice",
+      "language": "zh",
+      "files": {
+        "model": "model.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "use_itn": true
+      }
+    }
+  },
+  {
+    "name": "paraformer-zh-small",
+    "display_name": "Paraformer 中文 Small",
+    "description": "阿里 Paraformer 中文小模型，体积小速度快，适合低配机器",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-small-2024-03-09.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 77594624,
+    "model_type": "paraformer",
+    "language": "zh",
+    "vinput_model": {
+      "model_type": "paraformer",
+      "language": "zh",
+      "files": {
+        "model": "model.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "modeling_unit": "cjkchar+bpe",
+        "use_itn": true
+      }
+    }
+  },
+  {
+    "name": "zipformer-ctc-small-zh-int8",
+    "display_name": "Zipformer CTC 中文 Small (int8)",
+    "description": "最小的中文离线识别模型，仅 48MB，适合极低配置环境",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-ctc-small-zh-int8-2025-07-16.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 50331648,
+    "model_type": "zipformer_ctc",
+    "language": "zh",
+    "vinput_model": {
+      "model_type": "zipformer_ctc",
+      "language": "zh",
+      "files": {
+        "model": "model.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "use_itn": true
+      }
+    }
+  },
+  {
+    "name": "paraformer-zh-int8",
+    "display_name": "Paraformer 中文 (int8)",
+    "description": "阿里 Paraformer 中文标准模型 int8 量化版，精度与速度兼顾",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-int8-2025-10-07.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 227540992,
+    "model_type": "paraformer",
+    "language": "zh",
+    "vinput_model": {
+      "model_type": "paraformer",
+      "language": "zh",
+      "files": {
+        "model": "model.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "modeling_unit": "cjkchar+bpe",
+        "use_itn": true
+      }
+    }
+  },
+  {
+    "name": "moonshine-tiny-en",
+    "display_name": "Moonshine Tiny English",
+    "description": "超小英文模型，仅 28MB，适合纯英文输入场景",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-moonshine-tiny-en-quantized-2026-02-27.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 29360128,
+    "model_type": "moonshine",
+    "language": "en",
+    "vinput_model": {
+      "model_type": "moonshine",
+      "language": "en",
+      "files": {
+        "preprocessor": "preprocess.onnx",
+        "encoder": "encode.int8.onnx",
+        "uncached_decoder": "uncached_decode.int8.onnx",
+        "cached_decoder": "cached_decode.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {}
+    }
+  },
+  {
+    "name": "zipformer-zh-en",
+    "display_name": "Zipformer 中英双语",
+    "description": "中英双语 Zipformer Transducer 模型，单模型同时支持中英文",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-zh-en-2023-11-22.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 311427072,
+    "model_type": "zipformer_transducer",
+    "language": "zh_en",
+    "vinput_model": {
+      "model_type": "zipformer_transducer",
+      "language": "zh_en",
+      "files": {
+        "encoder": "encoder-epoch-99-avg-1.onnx",
+        "decoder": "decoder-epoch-99-avg-1.onnx",
+        "joiner": "joiner-epoch-99-avg-1.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {}
+    }
+  },
+  {
+    "name": "fire-red-asr2-ctc-zh-en-int8",
+    "display_name": "Fire Red ASR v2 中英 (int8)",
+    "description": "最新 Fire Red ASR v2 模型，中英文高精度识别，体积较大但效果最好",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-fire-red-asr2-ctc-zh_en-int8-2026-02-25.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 520093696,
+    "model_type": "fire_red_asr",
+    "language": "zh_en",
+    "vinput_model": {
+      "model_type": "fire_red_asr",
+      "language": "zh_en",
+      "files": {
+        "model": "model.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "use_itn": true
+      }
+    }
+  },
+  {
+    "name": "whisper-tiny",
+    "display_name": "Whisper Tiny 多语言",
+    "description": "OpenAI Whisper tiny 多语言模型，支持近百种语言，体积小",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-tiny.tar.bz2"
+    ],
+    "sha256": "",
+    "size_bytes": 115343360,
+    "model_type": "whisper",
+    "language": "multilingual",
+    "vinput_model": {
+      "model_type": "whisper",
+      "language": "multilingual",
+      "files": {
+        "encoder": "tiny-encoder.onnx",
+        "decoder": "tiny-decoder.onnx",
+        "tokens": "tiny-tokens.txt"
+      },
+      "params": {}
+    }
+  }
+]

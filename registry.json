@@ -1,52 +1,5 @@
 [
   {
-    "name": "zipformer-ctc-small-zh-int8",
-    "display_name": "Zipformer CTC 中文 Small (int8)",
-    "description": "最小的中文离线识别模型，仅 48MB，适合极低配置环境",
-    "url": [
-      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-ctc-small-zh-int8-2025-07-16.tar.bz2"
-    ],
-    "sha256": "6a71c0cc442ba85ac1455ca23e4561e2a1ef18e55269a184a649d54e9cd0524c",
-    "size_bytes": 50331648,
-    "model_type": "zipformer_ctc",
-    "language": "zh",
-    "vinput_model": {
-      "model_type": "zipformer_ctc",
-      "language": "zh",
-      "files": {
-        "model": "model.int8.onnx",
-        "tokens": "tokens.txt"
-      },
-      "params": {
-        "use_itn": true
-      }
-    }
-  },
-  {
-    "name": "paraformer-zh-small",
-    "display_name": "Paraformer 中文 Small",
-    "description": "阿里 Paraformer 中文小模型，体积小速度快，适合低配机器",
-    "url": [
-      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-small-2024-03-09.tar.bz2"
-    ],
-    "sha256": "da92b3db5218c5be53aad53e57d1b6e63e7fc98a0e054fbdd6dbe18e9c6b1450",
-    "size_bytes": 77594624,
-    "model_type": "paraformer",
-    "language": "zh",
-    "vinput_model": {
-      "model_type": "paraformer",
-      "language": "zh",
-      "files": {
-        "model": "model.int8.onnx",
-        "tokens": "tokens.txt"
-      },
-      "params": {
-        "modeling_unit": "cjkchar+bpe",
-        "use_itn": true
-      }
-    }
-  },
-  {
     "name": "dolphin-base-ctc-multilang-int8",
     "display_name": "Dolphin Base CTC 多语言 (int8)",
     "description": "字节跳动 Dolphin Base 多语言 CTC 模型，仅 77MB，支持中英等多语言",
@@ -59,32 +12,9 @@
     "language": "multilingual",
     "vinput_model": {
       "model_type": "dolphin",
-      "language": "multilingual",
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
-      },
-      "params": {}
-    }
-  },
-  {
-    "name": "whisper-tiny",
-    "display_name": "Whisper Tiny 多语言",
-    "description": "OpenAI Whisper tiny 多语言模型，支持近百种语言，体积小",
-    "url": [
-      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-tiny.tar.bz2"
-    ],
-    "sha256": "c46116994e539aa165266d96b325252728429c12535eb9d8b6a2b10f129e66b1",
-    "size_bytes": 115343360,
-    "model_type": "whisper",
-    "language": "multilingual",
-    "vinput_model": {
-      "model_type": "whisper",
-      "language": "multilingual",
-      "files": {
-        "encoder": "tiny-encoder.onnx",
-        "decoder": "tiny-decoder.onnx",
-        "tokens": "tiny-tokens.txt"
       },
       "params": {}
     }
@@ -102,7 +32,6 @@
     "language": "zh",
     "vinput_model": {
       "model_type": "sense_voice",
-      "language": "zh",
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
@@ -125,36 +54,11 @@
     "language": "multilingual",
     "vinput_model": {
       "model_type": "sense_voice",
-      "language": "zh",
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
       },
       "params": {
-        "use_itn": true
-      }
-    }
-  },
-  {
-    "name": "paraformer-zh-int8",
-    "display_name": "Paraformer 中文 (int8)",
-    "description": "阿里 Paraformer 中文标准模型 int8 量化版，精度与速度兼顾",
-    "url": [
-      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-int8-2025-10-07.tar.bz2"
-    ],
-    "sha256": "a071ee5419e14adb34d7f970ab98105a45e6608018b168f023ca2e4810744abe",
-    "size_bytes": 227540992,
-    "model_type": "paraformer",
-    "language": "zh",
-    "vinput_model": {
-      "model_type": "paraformer",
-      "language": "zh",
-      "files": {
-        "model": "model.int8.onnx",
-        "tokens": "tokens.txt"
-      },
-      "params": {
-        "modeling_unit": "cjkchar+bpe",
         "use_itn": true
       }
     }
@@ -172,11 +76,10 @@
     "language": "zh_en",
     "vinput_model": {
       "model_type": "zipformer_transducer",
-      "language": "zh_en",
       "files": {
-        "encoder": "encoder-epoch-99-avg-1.onnx",
-        "decoder": "decoder-epoch-99-avg-1.onnx",
-        "joiner": "joiner-epoch-99-avg-1.onnx",
+        "encoder": "encoder-epoch-34-avg-19.onnx",
+        "decoder": "decoder-epoch-34-avg-19.onnx",
+        "joiner": "joiner-epoch-34-avg-19.onnx",
         "tokens": "tokens.txt"
       },
       "params": {}

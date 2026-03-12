@@ -64,6 +64,72 @@
     }
   },
   {
+    "name": "paraformer-zh-small",
+    "display_name": "Paraformer 中文 Small (int8)",
+    "description": "阿里 Paraformer 中文小模型，仅 78MB，支持热词，适合资源受限场景",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-small-2024-03-09.tar.bz2"
+    ],
+    "sha256": "da92b3db5218c5be53aad53e57d1b6e63e7fc98a0e054fbdd6dbe18e9c6b1450",
+    "size_bytes": 77920048,
+    "model_type": "paraformer",
+    "language": "zh",
+    "vinput_model": {
+      "model_type": "paraformer",
+      "files": {
+        "model": "model.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "modeling_unit": "cjkchar"
+      }
+    }
+  },
+  {
+    "name": "paraformer-zh-2023-09-14",
+    "display_name": "Paraformer 中文 (2023-09-14)",
+    "description": "阿里 Paraformer 中文模型，223MB，支持热词，适合中文语音识别",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-2023-09-14.tar.bz2"
+    ],
+    "sha256": "9c49fd9c6fb63de8e18c1054cf3d100f804741b7e608e187923cd8ff09fa9f03",
+    "size_bytes": 234051698,
+    "model_type": "paraformer",
+    "language": "zh",
+    "vinput_model": {
+      "model_type": "paraformer",
+      "files": {
+        "model": "model.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "modeling_unit": "cjkchar"
+      }
+    }
+  },
+  {
+    "name": "paraformer-zh-int8-2025-10-07",
+    "display_name": "Paraformer 中文 (int8, 2025-10-07)",
+    "description": "阿里 Paraformer 中文模型最新版，218MB，int8 量化，支持热词",
+    "url": [
+      "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-int8-2025-10-07.tar.bz2"
+    ],
+    "sha256": "a071ee5419e14adb34d7f970ab98105a45e6608018b168f023ca2e4810744abe",
+    "size_bytes": 228262632,
+    "model_type": "paraformer",
+    "language": "zh",
+    "vinput_model": {
+      "model_type": "paraformer",
+      "files": {
+        "model": "model.int8.onnx",
+        "tokens": "tokens.txt"
+      },
+      "params": {
+        "modeling_unit": "cjkchar"
+      }
+    }
+  },
+  {
     "name": "zipformer-zh-en",
     "display_name": "Zipformer 中英双语",
     "description": "中英双语 Zipformer Transducer 模型，单模型同时支持中英文",

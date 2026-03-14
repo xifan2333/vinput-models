@@ -104,7 +104,7 @@
     "vinput_model": {
       "model_type": "paraformer",
       "files": {
-        "model": "model.onnx",
+        "model": "model.int8.onnx",
         "tokens": "tokens.txt"
       },
       "params": {

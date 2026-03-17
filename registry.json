@@ -7,12 +7,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-dolphin-base-ctc-multi-lang-int8-2025-04-02.tar.bz2"
     ],
     "sha256": "6f23da2303c3c2e5fa6445c450fa2a7133cd57e3da070ae5f97ab9e0dfbb4a54",
-    "size_bytes": 80671385,
-    "model_type": "dolphin",
-    "language": "multilingual",
-    "supports_hotwords": false,
     "vinput_model": {
       "model_type": "dolphin",
+      "language": "multilingual",
+      "supports_hotwords": false,
+      "size_bytes": 80671385,
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
@@ -28,12 +27,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09.tar.bz2"
     ],
     "sha256": "7305f7905bfcf77fa0b39388a313f3da35c68d971661a65475b56fb2162c8e63",
-    "size_bytes": 165675008,
-    "model_type": "sense_voice",
-    "language": "zh",
-    "supports_hotwords": false,
     "vinput_model": {
       "model_type": "sense_voice",
+      "language": "zh",
+      "supports_hotwords": false,
+      "size_bytes": 165675008,
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
@@ -51,12 +49,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-funasr-nano-int8-2025-12-17.tar.bz2"
     ],
     "sha256": "257936ea9a64cbe33200274e6367fc26d373ff6ca58b996b15108ffd6b9f6148",
-    "size_bytes": 187693225,
-    "model_type": "sense_voice",
-    "language": "multilingual",
-    "supports_hotwords": false,
     "vinput_model": {
       "model_type": "sense_voice",
+      "language": "multilingual",
+      "supports_hotwords": false,
+      "size_bytes": 187693225,
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
@@ -74,12 +71,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-small-2024-03-09.tar.bz2"
     ],
     "sha256": "da92b3db5218c5be53aad53e57d1b6e63e7fc98a0e054fbdd6dbe18e9c6b1450",
-    "size_bytes": 77920048,
-    "model_type": "paraformer",
-    "language": "zh",
-    "supports_hotwords": false,
     "vinput_model": {
       "model_type": "paraformer",
+      "language": "zh",
+      "supports_hotwords": false,
+      "size_bytes": 77920048,
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
@@ -97,12 +93,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-2023-09-14.tar.bz2"
     ],
     "sha256": "9c49fd9c6fb63de8e18c1054cf3d100f804741b7e608e187923cd8ff09fa9f03",
-    "size_bytes": 234051698,
-    "model_type": "paraformer",
-    "language": "zh",
-    "supports_hotwords": false,
     "vinput_model": {
       "model_type": "paraformer",
+      "language": "zh",
+      "supports_hotwords": false,
+      "size_bytes": 234051698,
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
@@ -120,12 +115,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-paraformer-zh-int8-2025-10-07.tar.bz2"
     ],
     "sha256": "a071ee5419e14adb34d7f970ab98105a45e6608018b168f023ca2e4810744abe",
-    "size_bytes": 228262632,
-    "model_type": "paraformer",
-    "language": "zh",
-    "supports_hotwords": false,
     "vinput_model": {
       "model_type": "paraformer",
+      "language": "zh",
+      "supports_hotwords": false,
+      "size_bytes": 228262632,
       "files": {
         "model": "model.int8.onnx",
         "tokens": "tokens.txt"
@@ -143,12 +137,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-multi-zh-hans-2023-9-2.tar.bz2"
     ],
     "sha256": "c4925a6b0f998800d16f80caf90d2decff7b7a8c156d044c6cffdf141c847d94",
-    "size_bytes": 309195644,
-    "model_type": "zipformer_transducer",
-    "language": "zh",
-    "supports_hotwords": true,
     "vinput_model": {
       "model_type": "zipformer_transducer",
+      "language": "zh",
+      "supports_hotwords": true,
+      "size_bytes": 309195644,
       "files": {
         "encoder": "encoder-epoch-20-avg-1.int8.onnx",
         "decoder": "decoder-epoch-20-avg-1.int8.onnx",
@@ -166,12 +159,11 @@
       "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-zh-en-2023-11-22.tar.bz2"
     ],
     "sha256": "0c3f2b9c884335a6931b8ccee6ede30e8dd3f89efc289ff64cd79d530a3bcf91",
-    "size_bytes": 311427072,
-    "model_type": "zipformer_transducer",
-    "language": "zh_en",
-    "supports_hotwords": true,
     "vinput_model": {
       "model_type": "zipformer_transducer",
+      "language": "zh_en",
+      "supports_hotwords": true,
+      "size_bytes": 311427072,
       "files": {
         "encoder": "encoder-epoch-34-avg-19.onnx",
         "decoder": "decoder-epoch-34-avg-19.onnx",

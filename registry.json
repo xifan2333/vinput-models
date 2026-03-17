@@ -148,7 +148,10 @@
         "joiner": "joiner-epoch-20-avg-1.int8.onnx",
         "tokens": "tokens.txt"
       },
-      "params": {}
+      "params": {
+        "decoding_method": "modified_beam_search",
+        "max_active_paths": "4"
+      }
     }
   },
   {
@@ -170,7 +173,10 @@
         "joiner": "joiner-epoch-34-avg-19.onnx",
         "tokens": "tokens.txt"
       },
-      "params": {}
+      "params": {
+        "decoding_method": "modified_beam_search",
+        "max_active_paths": "4"
+      }
     }
   }
 ]

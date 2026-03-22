@@ -10,7 +10,11 @@ fcitx5-vinput 的 ASR 模型注册表。CLI 工具通过此仓库的 `registry.j
     "name": "model-name",
     "display_name": "显示名称",
     "description": "模型描述",
-    "url": ["https://...tar.bz2"],
+    "url": [
+      "https://github.com/...tar.bz2",
+      "https://gh-proxy.com/https://github.com/...tar.bz2",
+      "https://ghfast.top/https://github.com/...tar.bz2"
+    ],
     "sha256": "校验和",
     "size_bytes": 12345678,
     "model_type": "sense_voice",
@@ -31,6 +35,8 @@ fcitx5-vinput 的 ASR 模型注册表。CLI 工具通过此仓库的 `registry.j
 | `model_type` | string | 模型类型标识（见下方） |
 | `language` | string | 模型支持的语言（仅用于展示） |
 | `vinput_model` | object | 安装后写入 `vinput-model.json` 的内容 |
+
+建议 `url` 按顺序填写：原始 GitHub 地址、`gh-proxy.com` 代理、`ghfast.top` 代理。客户端会按数组顺序依次尝试下载。
 
 ## vinput_model 规范
 
